@@ -31,7 +31,7 @@ class Message extends Component {
 
   submitted = (e) => {
     e.preventDefault();
-    axios.post(`http://localhost:5000/messages`, this.state).then((res) => {});
+    axios.post(`http://localhost:8080/messages`, this.state).then((res) => {});
 
     Swal.fire("Thank you!", "Your form has been submitted!", "success");
 
